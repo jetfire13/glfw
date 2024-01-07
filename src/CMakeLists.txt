@@ -393,8 +393,8 @@ configure_file("${GLFW_SOURCE_DIR}/CMake/glfw3.pc.in" glfw3.pc @ONLY)
 if (GLFW_INSTALL)
     install(TARGETS glfw
             EXPORT glfwTargets
-            RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
-            ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
-            LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
+            RUNTIME DESTINATION "${CMAKE_PROJECT_DIR}"
+            ARCHIVE DESTINATION "${CMAKE_PROJECT_DIR}"
+            LIBRARY DESTINATION "${CMAKE_PROJECT_DIR}")
 endif()
 
